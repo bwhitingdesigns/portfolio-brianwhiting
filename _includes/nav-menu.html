@@ -1,0 +1,14 @@
+<div class="nav-title">Menu</div>
+<div class="nav-holder fl-wrap nv-widget">
+    <nav>
+        <ul>
+            {% assign links = site.data.nav | where: "location", "mainnav" %}
+            {% for link in links %}
+            <li>
+                <i class="{{ link.icon }}"></i>
+                <a href="{{ link.url }}"> {{ link.title }} </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,92 @@
+{% assign story = site.data.pages.about | where: "section", "about-story" %}
+{% if page.video == "true" %}
+<!-- section -->
+<section class="parallax-section video-section">
+    <div class="media-container">
+        <div class="video-mask"></div>
+        <div class="video-holder">
+            <div class="video-container">
+                <video autoplay  loop muted  class="bgvid">
+                    <source src="video/2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--
+                Vimeo code
+                
+                 <div  class="background-vimeo" data-vim="97871257"> </div> -->
+            <!--
+                Youtube code
+                
+                 <div  class="background-youtube" data-vid="Hg5iNVSp2z8" data-mv="1"> </div> -->
+            <div class="mob-bg bg" data-bg="images/bg/3.jpg"></div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="promo-video fl-wrap">
+            <div class="promo-video-text">
+                <h3>Studio <span> Story</span>  <br> Promo   Video </h3>
+            </div>
+            <p>Internet tend to repeat predefined chunks If you are going to use a passage of Lorem Ipsum.</p>
+            <div  id="html5-videos" data-html="#video3" class="pvlin"><i class="fas fa-play"></i></div>
+            <!-- Hidden video div -->
+            <div style="display:none;" id="video3">
+                <video class="lg-video-object lg-html5" controls preload="none">
+                    <source src="video/2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section end-->
+{% endif %}
+{% for history in story %}
+<!-- section -->
+<section data-scrollax-parent="true"  id="sec2" class="scroll-con-sec dec-sec">
+    <div class="wrap-inner fl-wrap">
+        <div class="container">
+            <div class="section-title fl-wrap">
+                <h2>{{ histroy.heading }}</h2>
+                <h4>{{ history.subheading }}</h4>
+            </div>
+            <div class="custom-inner-holder">
+                {% for timeline in history.timeline %}
+                <!-- {{ timeline.num }} -->
+                <div class="custom-inner">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="resum-header">
+                                <i class="{{ timeline.icon }}"></i>
+                                <h3>{{ timeline.title }}</h3>
+                                <span>{{ timeline.year }}</span>
+                            </div>
+                            <div class="ci-num"><span>{{ timeline.num }}</span></div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="custom-inner-content fl-wrap">
+                                <h4>{{ timeline.heading }}</h4>
+                                <p>{{ timeline.text }}</p>
+                                {% for list in timeline.list %}
+                                <ul>
+                                    <li>{{ list }}</li>
+                                </ul>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- {{ timeline.num }} -->
+                {% endfor %}
+            </div>
+            {% for brochure in history.brochure %}
+            <a href="{{ brochure.url }}" class="btn hide-icon">
+                <i class="fal fa-file-pdf"></i><span>{{ brochure.text }}</span>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="sec-dec"></div>
+    </div>
+    <div class="pattern-bg right-pos"></div>
+</section>
+<!-- section end-->
+{% endfor %}

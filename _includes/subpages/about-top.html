@@ -1,0 +1,62 @@
+{% assign section1 = site.data.pages.about | where: "section", "about-top" %}
+<!-- section -->
+<section data-scrollax-parent="true">
+    <div class="wrap-inner fl-wrap">
+        <div class="container small-container">
+            <div class="about-wrap">
+                <div class="row">
+                    {% for top in section1 %}
+                    <div class="col-md-5">
+                        <div class="about-image fl-wrap">
+                            <img src="{{ top.image }}" class="respimg" alt="">
+                            <div class="triangle-dec" data-scrollax="properties: { translateY: '100px' }">
+                                <span></span>
+                            </div>
+                            <div class="ab_cirle-dec" data-scrollax="properties: { translateY: '-100px' }"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="about-text fl-wrap">
+                            <h3>{{ top.heading }}</h3>
+                            <h4>{{ top.subheading }}</h4>
+                            <p>{{ top.content }}</p>
+                            <div class="line-dec fl-wrap"></div>
+                            {% for button in top.button %}
+                            <a href="{{ button.url }}" class="btn hide-icon ajax">
+                                <i class="fas fa-caret-right"></i><span>{{ button.text }}</span>
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pattern-bg right-pos"></div>
+</section>
+<!-- section end-->
+<!-- section -->
+<section>
+    <div class="inline-facts-holder row">
+        {% for fact in top.facts %}
+        <!-- inline-facts -->
+        <div class="inline-facts-wrap col-md-4">
+            <div class="inline-facts">
+                <i class="fal {{ fact.icon }}"></i>
+                <div class="milestone-counter">
+                    <div class="stats animaper">
+                        <div class="num" data-content="0" data-num="{{ fact.num }}">
+                            {{ fact.num }}
+                        </div>
+                    </div>
+                </div>
+                <h6>{{ fact.subject }}</h6>
+            </div>
+        </div>
+        <!-- inline-facts end -->
+        {% endfor %}
+    </div>
+</section>
+<!-- section end-->

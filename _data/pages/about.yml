@@ -1,0 +1,111 @@
+- section: about-info
+
+  heading: About <span>Brian Whiting</span>
+  text: Here are some information about myself that you can get for free
+
+- section: about-top
+  
+  image: /images/face/sketch-image.png
+  heading: Welcome to B Whiting Designs
+  subheading: A southern designer learning about the west
+
+  content: Born and raised in Alabama. From the early youth of middle school I had a passion for design and all things pixel. I been working on my craft since 2005 on my own and been making it happen. Slowly I made my way west to Colorado where I currently reside. I have done many work in the field of UI/UX Design and Development. Over the years I have worked with different companies and organizations. The speciality started in small - medium businesses and have grown to specialization for non-profits.
+
+  button:
+    - url: /portfolio/
+      text: View My Work
+  
+  facts:
+    - subject: Finished Projects
+      num: '862'
+      icon: fa-business-time
+    - subject: Happy Customers
+      num: '72'
+      icon: fa-users
+    - subject: Hours Worked
+      num: '432'
+      icon: fa-clock
+
+- section: about-story
+
+  heading: My <span>Rise to Power</span>...
+  subheading: I always wanted to say that line growing up
+
+  timeline:
+    - num: '01'
+      icon: far fa-briefcase
+      title: Started Freelancing
+      year: 2005 - Present
+      heading: Start of A Hobby turned Career Goal
+      text: I started working as a freelancer since middle school when I was getting my feet wet. I only was able to make websites using Notepad in basic HTML and inline CSS. Worked with over 20 different projects during my time on and off as a freelancer. While working, I dabbled in Ruby, custom video game coding languages such as Eclipse and Gen2D (SandScript), and occasional WordPress. Lately has transitioned to JekyllRB for easier and faster development process.
+      list:
+        - Self-taught designer and developer
+        - Paved my own path to get to where I am
+        - Non-profit consultant
+
+    - num: '02'
+      icon: far fa-briefcase
+      title: Digital Media Coordinator
+      year: '2022'
+      heading: Jack of All Trades
+      text: Worked on graphic designs for the equipment after photoshoots, took videos of salesman quality controls for clients, uploaded videos to YouTube page, and provided assistance to website media needs. Handled website email marketing campaigns, setup process for organized leads generations, handled weekly email blasts for nationwide clientelle.
+      list: 
+        - Handled email marketing avg. 12% from 13k+ leads
+        - Handled SEO, Social Media, etc.
+        - Worked with video editing tasks, graphic edits, etc.
+
+    - num: '03'
+      icon: far fa-briefcase
+      title: Native Rank
+      year: '2019'
+      heading: One of the first designers
+      text: I was hired on as a web designer for their company and found out to be one of the first two web designers they hired for the position. Started working with them and worked with over 20 projects with them. Specialized on the design team and worked with the post-development team for content updates and changes, along with analytics reports.
+      list:
+        - Handled UI/UX projects for local businesses
+        - Developed a design to dev process
+        - Adobe Suit expert and WordPress designer
+
+    - num: '04'
+      icon: far fa-briefcase
+      title: Madness Labs
+      year: 2014 - 2015, 2019, 2020
+      heading: My first agency
+      text: Started with them as my first agency and their first web designer. Built the company first website as a startup and helped with development projects for the clients and applications made. Got my grasp on Ruby while working with the company that later helped me with expanding my horizon with the new flat cms and static site generators.
+      list:
+        - Used early Liquid templating called Handlebars (Shopify)
+        - Worked with AngularJS and Ionic for app design/development
+        - First Agency
+  brochure:
+    - url: '#'
+      text: Download Resume
+
+- section: about-services
+
+  image: 
+  heading: Services <span>Offered</span>
+  subheading: As a man of many talents and trades, I have gathered abilities that can help you get to where you need to go
+
+  tab:
+    - title: UI/UX Design
+      num: '01'
+      icon: far fa-mobile-android
+      image: images/services/1.jpg
+      text: I have been doing UI/UX Design and Development since I could remember how to code in Notepad. Having the ability to understand a user and developing a strategy and concept that works for them where they can go to the product and follow it without issues is my passion. I love to tailor a design project for you that fits your brand and focal point, meaning doing the research and studying will be my thing throughout from start to finish. Along with designing the project if you need it to be developed from concept to reality, that is also offered in the package deal. Nothing will make me happier than seeing your face when the traffic starts rolling in from the updated design and implementations of the SEO tactics that come with it. Why not send me a message now to go ahead and get started?!
+      description-list:
+        - Develop User Interfaces
+        - Marketing/Research
+        - User Strategies
+    
+    - title: Web Design
+      num: '02'
+      icon: far fa-desktop
+      image:
+      text:
+      description-list:
+    
+    - title: Consultation
+      num: '03'
+      icon: far fa-anchor
+      image:
+      text:
+      description-list:

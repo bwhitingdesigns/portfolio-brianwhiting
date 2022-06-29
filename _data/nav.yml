@@ -1,0 +1,20 @@
+- title: Home
+  url: /
+  icon: fal fa-home
+  location: mainnav
+- title: About
+  url: /about/
+  icon: fal fa-users
+  location: mainnav
+- title: Portfolio
+  url: /portfolio/
+  icon: fal fa-briefcase
+  location: mainnav
+- title: Contact Me
+  url: /contact-me/
+  icon: fal fa-globe
+  location: mainnav
+- title: Dragon Council
+  url: /nerding-out/
+  icon: fal fa-newspaper
+  location: mainnav

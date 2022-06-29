@@ -1,0 +1,25 @@
+- page: about-info
+  
+  links:
+    - title: About Me
+      url: sec1
+    - title: My Story
+      url: sec2
+    - title: Services
+      url: sec3
+    - title: Skillset
+      url: sec4
+    - title: Clients
+      url: sec5
+
+- page: portfolio-home
+
+  links:
+    - title: All Projects
+      url: all-projects
+    - title: UI/UX Design
+      url: ui-design
+    - title: Development
+      url: development
+    - title: Graphic Design
+      url: graphic-design

@@ -1,0 +1,45 @@
+<div class="fs-gallery-wrap home-slider fl-wrap full-height" data-autoplayslider="5000">
+    <div class="swiper-container" data-scrollax-parent="true" >
+        <div class="swiper-wrapper">
+            {% assign sliders = site.data.sliders %}
+            {% for slider in sliders %}
+            <!-- swiper-slide-->
+            <div class="swiper-slide">
+                <div class="fs-slider-item full-height fl-wrap">
+                    <div class="bg"  data-bg="{{ slider.images }}" data-swiper-parallax="40%"></div>
+                    <a href="{{ slider.images }}" class="slider-zoom image-popup"><i class="fas fa-search"  ></i></a>
+                    <div class="overlay"></div>
+                    <!-- hero-wrap-->           
+                    <div class="hero-wrap">
+                        <div class="container">
+                            <div class="hero-item">
+                                <h3>{{ slider.main_caption }}</h3>
+                                <h2>{{ slider.sub_caption }}</h2>
+                                <div class="hero-dec"></div>
+                                <p>{{ slider.caption }}</p>
+                                <a href="{{ slider.url }}" class="btn hide-icon ajax">
+                                    <i class="fas fa-caret-right"></i><span>{{ slider.url_text }}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hero-wrap end--> 
+                </div>
+            </div>
+            <!-- swiper-slide end-->
+            {% endfor %}
+        <div class="sw-button swiper-button-next mob_bottom"><i class="fas fa-caret-right"></i></div>
+        <div class="sw-button swiper-button-prev mob_bottom"><i class="fas fa-caret-left"></i></div>
+        <div class="swiper-pagination"></div>
+        <div class="slider-progress-bar act-slider">
+            <span>
+                <svg class="circ" width="30" height="30">
+                    <circle class="circ2" cx="15" cy="15" r="13" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="none" />
+                    <circle class="circ1" cx="15" cy="15" r="13" stroke="#F7B90F" stroke-width="2" fill="none" />
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div class="hero-dec_top"></div>
+    <div class="hero-dec_bottom"></div>
+</div>

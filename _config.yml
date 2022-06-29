@@ -1,0 +1,91 @@
+# Base settings
+title: Brian Whiting - UI/UX Designer 
+description: Website for a UI/UX Designer that loves to make pixel graphics come to life on a device. A freelancer baserd in Colorado that has experience to make a simple project into a masterpiece with some details. Also an avid D&D player that has a funny podcast with friends called Idiots and a DM on all major platforms.
+baseurl: ""
+url: ""
+
+# Contact Info
+email: brianwhiting@bwhitingdesigns.com
+email_alt: bwhitingdesigns@gmail.com
+tel: 334-538-5644
+tel_link: +13345385644
+address: Aurora, CO
+timezone: America/Denver
+
+# Hosting Services
+hosting_url: http://hosting.bwhitingdesigns.com
+
+# Analytics
+google_tag: GTM-NKS3CNF
+
+# Social Media
+blog_url: https://blog.bwhitingdesigns.com
+twitch_url: https://www.twitch.tv/forsakenelite08
+spotify_url: https://open.spotify.com/show/5Vie08L0qeM8d1WqJnFJdJ
+anchorfm_url: https://anchor.fm/idiots-and-dm
+googlepodcast_url: https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zOWQ2M2EyNC9wb2RjYXN0L3Jzcw==
+dribbble_url: https://dribbble.com/BrianWhiting
+github_url: https://github.com/bwhitingdesigns
+github_username: bwhitingdesigns
+facebook_url: https://www.facebook.com/bwhitingdesigns
+facebook:
+  app_id: 2358622077775061
+googleplus_url:
+instagram_url: https://www.instagram.com/bwhitingdesigns/
+linkedin_url: https://www.linkedin.com/in/bwdesigns/
+twitter_url: https://twitter.com/ForsakenElite08
+twitter:
+  username: ForsakenElite08
+  card: summary
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+
+# Markdown
+markdown: kramdown
+
+# Permalinks
+permalink: /blog/:categories/:title
+
+# Collections
+collections:
+  portfolio:
+    permalink: "/portfolio/:name"
+    output: true
+  authors:
+    permalink: "/blog/author/:name"
+    output: true
+  category:
+    permalink: "/blog/category/:name"
+    output: true
+  podcast:
+    permalink: "/idiots-and-a-dm/:name"
+    output: true
+  characters:
+    permalink: "/idiots-and-a-dm/cast/:name"
+    output: true
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
