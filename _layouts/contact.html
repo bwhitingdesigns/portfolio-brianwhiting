@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<!--Content -->
+<div class="content">
+    <div class="column-content">
+        <section  class=" parallax-section content-parallax-section" data-scrollax-parent="true" id="sec1">
+            <div class="bg" {% if page.header-image %}data-bg="{{ page.header-image }}"{% endif %} data-scrollax="properties: { translateY: '150px' }" ></div>
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="section-title">
+                    <h2>My <span>Contacts</span></h2>
+                    <p>Here are some ways to get in touch with me to help you get your project started</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contact-detail-wrap fl-wrap">
+                <div class="row">
+                    <!-- contact-detail -->
+                    <div class="col-md-4">
+                        <div class="contact-detail fl-wrap">
+                            <i class="fal fa-phone-rotary"></i>
+                            <h3>My Phone</h3>
+                            <p>Need to call me for a quote?</p>
+                            <ul>
+                                <li><a href="tel:{{ site.tel_link }}">Phone Number</a></li>
+                            </ul>
+                            <span class="card-item_num">01.</span>
+                        </div>
+                    </div>
+                    <!-- contact-detail end -->
+                    <!-- contact-detail -->
+                    <div class="col-md-4">
+                        <div class="contact-detail fl-wrap">
+                            <i class="fal fa-envelope"></i>
+                            <h3>My E-mails</h3>
+                            <p>Send me a direct email here:</p>
+                            <ul>
+                                <li><a href="mailto:{{ site.email }}">Work Email</a></li>
+                            </ul>
+                            <span class="card-item_num">02.</span>
+                        </div>
+                    </div>
+                    <!-- contact-detail end -->
+                    <!-- contact-detail -->
+                    <div class="col-md-4">
+                        <div class="contact-detail fl-wrap">
+                            <i class="fal fa-map-marked"></i>
+                            <h3>My Local Location</h3>
+                            <p>I am based out of here:</p>
+                            <ul>
+                                <li><a href="#">{{ site.address }}</a></li>
+                            </ul>
+                            <span class="card-item_num">03.</span>
+                        </div>
+                    </div>
+                    <!-- contact-detail end -->                                      
+                </div>
+            </div>
+        </section>
+        <div class="map-box  fl-wrap">
+            <div class="map-container mc_big">
+                <div id="map-single" class="map" data-latlog="[39.6781, -104.9071]" data-popuptext="I work here in Aurora, CO. Can't wait to get in touch!"></div>
+            </div>
+        </div>
+        <section>
+            <div class="wrap-inner fl-wrap">
+                <div class="container">
+                    <div class="section-title fl-wrap">
+                        <h2>Get in Touch <span> With Me</span></h2>
+                        <h4>Fill out the form in detail of what you are asking for</h4>
+                    </div>
+                    <div class="fl-wrap">
+                        <!-- contact form -->
+                        <div id="contact-form">
+                            <div id="message"></div>
+                            <form class="custom-form" name="contact-form" method="POST" accept-charset="UTF-8" data-netlify-recaptcha="true" data-netlify="true">
+                                <p class="hidden">
+                                    <label>Don't fill out this field if your human: <input name="false-field"></label>
+                                </p>
+                                <div class="input-wrap">
+                                    <i class="fal fa-user-plus"></i><input name="name" type="text" id="name"  class="inputForm2" onClick="this.select()" value="Name" >
+                                </div>
+                                <div class="input-wrap">
+                                    <i class="fal fa-envelope"></i><input name="email" type="text" id="email" onClick="this.select()" value="E-mail" >
+                                </div>
+                                <textarea name="comments"  id="comments" onClick="this.select()" >Message</textarea>
+                                <button type="submit"  id="submit"  class="btn hide-icon">
+                                    <i class="fas fa-caret-right"></i><span>Send Message </span>
+                                </button>
+                                <div data-netlify-recaptcha="true"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="pattern-bg right-pos"></div>
+                <div class="sec-dec"></div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- content  end -->

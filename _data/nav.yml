@@ -11,7 +11,7 @@
   icon: fal fa-briefcase
   location: mainnav
 - title: Contact Me
-  url: /contact-me/
+  url: /contact/
   icon: fal fa-globe
   location: mainnav
 - title: Dragon Council

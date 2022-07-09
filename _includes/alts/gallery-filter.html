@@ -1,0 +1,19 @@
+{% assign filters = site.data.pages.portfolio | where: "section", "filter" %}
+{% for folio in filters %}
+<div class="filter-wrap inline-filter">
+    <div class="mob-filter_btn"><i class="fas fa-filter"></i> Filters</div>
+    <div class="gallery-filters gfm">
+        <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All projects</a>
+        <a href="#" class="gallery-filter" data-filter=".web-design">Web Design</a>
+        <a href="#" class="gallery-filter" data-filter=".ui-ux-design">UI/UX Design</a>
+        <a href="#" class="gallery-filter" data-filter=".graphic-design">Graphic Design</a>
+        <a href="#" class="gallery-filter" data-filter=".consultation">Consultation</a>
+    </div>
+    <div class="folio-counter">
+        <div class="num-album"></div>
+        <span></span>
+        <div class="all-album"></div>
+        <i class="fal fa-list"></i>
+    </div>
+</div>
+{% endfor %}

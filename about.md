@@ -5,7 +5,7 @@ permalink: /about/
 
 location: About
 
-header-image: images/bg/1.jpg
+header-image:
 
 video: false
 ---

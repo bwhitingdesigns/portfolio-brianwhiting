@@ -21,7 +21,7 @@
             <header class="main-header">
                 <!-- logo-holder--> 
                 <div class="logo-holder">
-                    <a href="index.html" class="ajax"><img src="images/logo.png" alt=""></a>
+                    <a href="index.html" class="ajax"><img src="/images/logo.png" alt=""></a>
                 </div>
                 <!-- logo-holder end-->
                 <!-- breadcrumb-wrap--> 
@@ -111,23 +111,19 @@
                     <!-- hero-content end-->
                     {% endif %}
                     <!-- Content -->
+                    {% if page.url == "/about/" %}
                     <div class="content">
                         <!-- column-content -->
                         <div class="column-content">
-                            {% if page.url == "/about/" or "/portfolio/" %}
                             <!-- scroll-nav-wrap -->
                             <div class="scroll-nav-wrap">
                                 {% include /subpages/scroll-nav.html %}
                             </div>
                             <div class="psn_button color-bg act-filter"><i class="fal fa-sort"></i> Nav FIlter </div>
                             <!-- scroll-nav-wrap end -->
-                            
-                            {% if page.url == "/about/" %}
                             <!-- header section -->
                                 {% include /subpages/about-header.html %}
                             <!-- header section end-->
-                            {% endif %}
-                            {% if page.url == "/about/" %}
                                 {% include /subpages/about-top.html %}
                             <!-- my story section -->
                                 {% include /subpages/about-story.html %}
@@ -141,14 +137,27 @@
                             <!-- section clientelle -->
                                 {% include /subpages/about-clients.html %}
                             <!-- section clientelle end -->
-                            {% elsif page.url == "/portfolio" %}
-
-                            {% endif %}
                         </div>
                         <!-- column wrap end-->
                     </div>
                     <!-- content  end -->
                     <!-- content end -->
+                    {% elsif page.url == "/portfolio/" %}
+                    <div class="content fs-content">
+                        <!-- Filter -->
+                        {% include /alts/gallery-filter.html %}
+                        <!-- Filter end -->
+                        <!-- portfolio start -->
+                        {% include /subpages/gallery.html %}
+                        <!-- portfolio end-->
+                        {% include /cta/bar-1.html %}
+                    </div>    
+                    {% endif %}
+                    {% if page.layout == "portfolio-single" %}
+                        {{ content }}
+                    {% endif %}
+                    {% if page.layout == "contact" %}
+                        {{ content }}
                     {% endif %}
                     <!--=============== footer ===============-->
                     {% include footer.html %}

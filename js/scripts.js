@@ -463,7 +463,7 @@ function initTrion() {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
         var greenIcon = L.icon({
-            iconUrl: 'images/marker.png',
+            iconUrl: '/images/marker.png',
             iconSize: [40, 40],
             popupAnchor: [0, -26]
         });

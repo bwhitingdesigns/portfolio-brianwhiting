@@ -1,66 +1,25 @@
-<!-- order-wrap-->
-<div class="order-wrap fl-wrap color-bg">
-    <div class="row">
-        <div class="col-md-8">
-            <h4>Ready to order your project ?</h4>
-        </div>
-        <div class="col-md-4">
-            <a href="contact.html" class="ord-link">Get In Touch</a>
-        </div>
-    </div>
-</div>
-<!-- order-wrap end-->
-<!-- section end-->
+{% assign skills = site.data.pages.about | where: "section", "about-skills" %}
+{% for skill in skills %}
 <!-- section -->
 <section id="sec4">
     <div class="wrap-inner fl-wrap">
         <div class="container">
             <div class="section-title fl-wrap">
-                <h2> My<span> Skills and Abilities</span></h2>
-                <h4>Internet tend to repeat predefined chunks  look even slightly believable If you are going   of Lorem Ipsum.</h4>
+                <h2>{{ skill.heading }}</h2>
+                <h4>{{ skill.subheading }}</h4>
             </div>
-            <div class="piechart-holder animaper" data-skcolor="#F7B90F">
+            <div class="piechart-holder animaper" data-skcolor="#ED213A">
                 <div class="row">
-                    <!-- 1  -->
+                    {% for chart in skill.chart %}
+                    <!-- {{ chart.title }} -->
                     <div class="piechart col-md-4" >
-                        <span class="chart" data-percent="85">
+                        <span class="chart" data-percent="{{ chart.percent }}">
                         <span class="percent"></span>
                         </span>
-                        <h4>Design</h4>
+                        <h4>{{ chart.title }}</h4>
                     </div>
-                    <!-- 1 end -->
-                    <!-- 2  -->
-                    <div class="piechart col-md-4">
-                        <span class="chart" data-percent="95">
-                        <span class="percent"></span>
-                        </span>
-                        <h4>Branding</h4>
-                    </div>
-                    <!-- 2 end  -->
-                    <!-- 3  -->
-                    <div class="piechart col-md-4">
-                        <span class="chart" data-percent="80">
-                        <span class="percent"></span>
-                        </span>
-                        <h4>Ecommerce</h4>
-                    </div>
-                    <!-- 3  end-->
-                    <!-- 2  -->
-                    <div class="piechart col-md-4">
-                        <span class="chart" data-percent="75">
-                        <span class="percent"></span>
-                        </span>
-                        <h4>Photoshop</h4>
-                    </div>
-                    <!-- 2 end  -->
-                    <!-- 3  -->
-                    <div class="piechart col-md-4">
-                        <span class="chart" data-percent="62">
-                        <span class="percent"></span>
-                        </span>
-                        <h4>Photography</h4>
-                    </div>
-                    <!-- 3  end-->
+                    <!-- {{ chart.title }} end -->
+                    {% endfor %}
                 </div>
             </div>
             <div class="serv-dec"></div>
@@ -70,3 +29,4 @@
     </div>
 </section>
 <!-- section end-->
+{% endfor %}

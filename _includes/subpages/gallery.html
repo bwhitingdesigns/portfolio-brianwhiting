@@ -1,0 +1,22 @@
+<div class="gallery-items spad">
+    {% for gallery in site.portfolio %}
+    <!-- gallery-item-->
+    <div class="gallery-item {{ gallery.tag | join: " " }}">
+        <div class="grid-item-holder">
+            <div class="box-item vis-det folio-img fl-wrap">
+                <img src="{{ gallery.showcase }}" alt="">
+                <a data-src="{{ gallery.showcase }}" class="image-popup single-popup"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="grid-det fl-wrap">
+                <h3><a href="{{ gallery.url }}" class="ajax">{{ gallery.title | strip_html }}</a></h3>
+                <span>
+                {% for services in gallery.services %}
+                    {{ services }}
+                {% endfor %}
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- gallery-item end-->
+    {% endfor %}
+</div>

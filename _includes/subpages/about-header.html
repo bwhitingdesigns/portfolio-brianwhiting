@@ -1,7 +1,7 @@
 {% assign about = site.data.pages.about | where: "section", "about-info" %}
 {% for info in about %}
 <section  class=" parallax-section content-parallax-section" data-scrollax-parent="true" id="sec1">
-    <div class="bg" data-bg="{{ page.header-image }}" data-scrollax="properties: { translateY: '150px' }" ></div>
+    <div class="bg" {% if page.header-image %}data-bg="{{ page.header-image }}"{% endif %} data-scrollax="properties: { translateY: '150px' }" ></div>
     <div class="overlay"></div>
     <div class="container">
         <div class="section-title">

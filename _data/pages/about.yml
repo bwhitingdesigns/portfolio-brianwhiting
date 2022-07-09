@@ -6,7 +6,7 @@
 - section: about-top
   
   image: /images/face/sketch-image.png
-  heading: Welcome to B Whiting Designs
+  heading: Welcome to my portfolio
   subheading: A southern designer learning about the west
 
   content: Born and raised in Alabama. From the early youth of middle school I had a passion for design and all things pixel. I been working on my craft since 2005 on my own and been making it happen. Slowly I made my way west to Colorado where I currently reside. I have done many work in the field of UI/UX Design and Development. Over the years I have worked with different companies and organizations. The speciality started in small - medium businesses and have grown to specialization for non-profits.
@@ -89,8 +89,11 @@
     - title: UI/UX Design
       num: '01'
       icon: far fa-mobile-android
-      image: images/services/1.jpg
-      text: I have been doing UI/UX Design and Development since I could remember how to code in Notepad. Having the ability to understand a user and developing a strategy and concept that works for them where they can go to the product and follow it without issues is my passion. I love to tailor a design project for you that fits your brand and focal point, meaning doing the research and studying will be my thing throughout from start to finish. Along with designing the project if you need it to be developed from concept to reality, that is also offered in the package deal. Nothing will make me happier than seeing your face when the traffic starts rolling in from the updated design and implementations of the SEO tactics that come with it. Why not send me a message now to go ahead and get started?!
+      image: /images/services/ui-ux.jpg
+      tab: tab-1
+      text: 
+        - I have been doing UI/UX Design and Development since I could remember how to code in Notepad. Having the ability to understand a user and developing a strategy and concept that works for them where they can go to the product and follow it without issues is my passion. I love to tailor a design project for you that fits your brand and focal point, meaning doing the research and studying will be my thing throughout from start to finish. 
+        - Along with designing the project if you need it to be developed from concept to reality, that is also offered in the package deal. Nothing will make me happier than seeing your face when the traffic starts rolling in from the updated design and implementations of the SEO tactics that come with it. Why not send me a message now to go ahead and get started?!
       description-list:
         - Develop User Interfaces
         - Marketing/Research
@@ -99,13 +102,88 @@
     - title: Web Design
       num: '02'
       icon: far fa-desktop
-      image:
-      text:
+      image: /images/services/web-design.jpg
+      tab: tab-2
+      text: 
+        - Web Design has been my passion because I can make the design as detailed as needed and allow it to be placed onto a digital canvas for others to see. I work with making your design ideas into a reality and visible for your users to notice. 
+        - Coding the website is part of the package deal. This also co-exists with the fact that I will provide responsive features to your website that it needs to be a reality. The design is set for a standard of desktop, tablet, and mobile variations and comes with all optimized images so that your site can have a fighting chance on getting seen.
       description-list:
+        - Detailed Designs
+        - Responsiveness (Mobile-friendly)
+        - Custom Made for YOU
     
     - title: Consultation
       num: '03'
       icon: far fa-anchor
-      image:
-      text:
+      image: /images/services/branding.jpg
+      tab: tab-3
+      text: 
+        - In need of someone to help with finding what is wrong with your site? Need someone to come in and help with something simple to make changes for your business? Been struggling to find what has been the problem with your structure but unable to deal with the analytic details? Well, I can be of some assistance in doing that for you.
+        - Offering my clients initial free consultation work so that they can get their projects off the ground and find what has been keeping them stagnant in traffic. I use analytical research from a 3 month period prior (if you have that) and then set you up with and updated SEO to help test out the issue for a free 3 month plan for you and then once the traffic comes in, I set you up with a branding plan that helps with your site changes as they go. Come up with strategy plans on doing articles, timed email/sms campaigns, and more that you will need.
       description-list:
+        - Branding
+        - SEO and Analytics
+        - Free Consultation Plan
+
+- section: about-skills
+
+  heading: My <span>Special Set of Skills</span>
+  subheading: Over the years I have gained a special set of skills that provide assistance to make my work my own
+
+  chart:
+    - title: Design
+      percent: '85'
+    - title: Branding
+      percent: '72'
+    - title: Adobe Suite
+      percent: '86'
+    - title: UI/UX
+      percent: '95'
+    - title: Video Editing/Podcasting
+      percent: '71'
+    - title: D&D/Tabletop
+      percent: '100'
+
+- section: about-clients
+  
+  heading: My Clients <span>and Partners</span>
+
+  clientelle:
+    - name: Art Transforms Inc.
+      image: /images/clients/ati.png
+      info: Non-proift organization that helps with domestic violence victims through art, based in NYC.
+      url: /portfolio/arttransforms/
+    - name: Disabled in Action - NYC
+      image: /images/clients/dia-logo.png
+      info: Non-profit organization that helps with providing assistance to disabled individuals, based in NYC.
+      url: /portfolio/disabledinaction/
+    - name: The Poetic Mistress
+      image: /images/clients/1.png
+      info: An Alabama local writer that creates poems that hit your soul.
+      url: /portfolio/poeticmistress/
+    - name: Expertise.com
+      image: https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/co_aurora_web-developers_2022.svg
+      info: Partnership with Expertise.com as one of the featured web developers in the Aurora, CO area.
+      url: https://www.expertise.com/co/aurora/web-developers#BWhitingDesigns
+
+- section: about-reviews
+  
+  heading: Testimonial <span>and reviews</span>
+  subheading: Here are some reviews for you to look at from clients of mines.
+
+  client:
+    - name: Wanda Best
+      num: '01'
+      review: He took a look at the old website and suggested immediate changes to bring the website's appearance current. He met and exceeded the needs of the organization.  He demonstrated a high level of quality, dependability, affordability and creativity.  The design was clean and user friendly.  He communicated with me so he could understand my vision for the website. With no hesitation I recommend Brian Whiting to get the best out of a website.  Not only did he design a beautiful, artsy website I learned a lot about web designing from Brian.
+      from: Via Email
+      website: https://www.arttransforms.org
+    - name: S. D. Johnson
+      num: '02'
+      review: Mr. Whiting’s services were beyond what I expected and he is very knowledgeable about web design which definitely helps when developing one’s website. Mr. Whiting is professional and knows his craft very well. I am extremely pleased with his services and I plan to refer others to him in the near future. Communication with Mr. Whiting was essential and he was available to handle the tasks that I required for my business.
+      from: Via Google Review
+      website: http://www.poeticmistress.com/
+    - name: Phil Bender - DIA NYC
+      num: '03'
+      review: We want to personally thank you for all your time and work in designing and building the new Disabled In Action website. Our old site was outdated and poorly maintained, which hindered our public image. The newly designed site is a start to energize our organization as we renew our fight for a better more accessible society.
+      from: Via Letter
+      website: https://dia-nyc.netlify.app/

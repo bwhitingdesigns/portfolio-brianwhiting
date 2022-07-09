@@ -1,6 +1,5 @@
 <nav class="scroll-nav">
     <ul>
-    {% if page.url == "/about/" %}
         {% assign links = site.data.scroll-nav | where: "page", "about-info" %}
         {% for link in links.links %}
         <li>
@@ -9,15 +8,5 @@
             </a>
         </li>
         {% endfor %}
-    {% elsif page.url == "/portfolio/" %}
-        {% assign links = site.data.scroll-nav | where: "page", "portfolio-home" %}
-        {% for link in links.links %}
-        <li>
-            <a class="scroll-link {% if page.url == link.url %}act-link{% endif %}" href="#{{ link.url }}"> 
-                <span>{{ link.title }}</span>
-            </a>
-        </li>
-        {% endfor %}
-    {% endif %}
     </ul>
 </nav>

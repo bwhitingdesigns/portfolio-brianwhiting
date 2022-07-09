@@ -19,31 +19,21 @@
     <div class="fl-wrap serv-wrap">
         <div class="row">
             <div class="col-md-3">
+                {% for accordion in service.tab %}
                 <ul class="tabs sl-tabs fix-tab">
-                    <li class="tab-link current" data-tab="tab-1">
+                    <li class="tab-link {% if forloop.first %}current{% endif %}" data-tab="{{ accordion.tab }}">
                         <div class="tb-item">
-                            <i class="far fa-desktop"></i>
-                            <h3>Web Design</h3>
-                        </div>
-                    </li>
-                    <li class="tab-link" data-tab="tab-2">
-                        <div class="tb-item">
-                            <i class="far fa-anchor"></i>
-                            <h3>Branding</h3>
-                        </div>
-                    </li>
-                    <li class="tab-link" data-tab="tab-3">
-                        <div class="tb-item">
-                            <i class="far fa-mobile-android"></i>
-                            <h3>UI/UX Design</h3>
+                            <i class="{{ accordion.icon }}"></i>
+                            <h3>{{ accordion.title }}</h3>
                         </div>
                     </li>
                 </ul>
+                {% endfor %}
             </div>
             <div class="col-md-9">
                 {% for tab in service.tab %}
                 <!-- tab {{ tab.num }} {{ tab.title }} -->
-                <div id="tab-1" class="tab-content current">
+                <div id="{{ tab.tab }}" class="tab-content {% if forloop.first %}current{% endif %}">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="box-item vis-det fl-wrap">
@@ -52,84 +42,25 @@
                             </div>
                         </div>
                         <div class="col-md-5">
+                            {% for list in tab.description-list %}
                             <ul class="dec-list">
-                                <li> Develop / User inerface</li>
-                                <li>  Photography / Flayers </li>
-                                <li> Marketing  / Research</li>
+                                <li>{{ list }}</li>
                             </ul>
+                            {% endfor %}
                             <span class="price">Request Quote</span>
                         </div>
                     </div>
                     <h3><span>{{ tab.num }} </span>{{ tab.title }}</h3>
                     <div class="serv-text fl-wrap">
-                        <p>FLorem Gpsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        {% for text in tab.text %}
+                        <p>{{ text }}</p>
+                        {% endfor %}
                     </div>
-                    <a href="#" class="cus-inner-head-link color-bg">Details + </a>
                     <div class="serv-dec"></div>
                     <div class="pattern-bg right-pos"></div>
                 </div>
-                <!-- tab1 end -->
+                <!-- tab {{ tab.num }} {{ tab.title }} end -->
                 {% endfor %}
-                <!-- tab2 -->
-                <div id="tab-2" class="tab-content">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="box-item vis-det fl-wrap">
-                                <img src="images/services/1.jpg" class="respimg" alt="">
-                                <a data-src="images/services/1.jpg" class="image-popup"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <ul class="dec-list">
-                                <li>Research / Develop</li>
-                                <li> User inerface /  Photography  </li>
-                                <li> Flayers / Marketing  </li>
-                            </ul>
-                            <span class="price">Price: 190-250 $</span>
-                        </div>
-                    </div>
-                    <h3><span>02. </span>Branding</h3>
-                    <div class="serv-text fl-wrap">
-                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <a href="#" class="cus-inner-head-link color-bg">Details + </a>
-                    <div class="serv-dec"></div>
-                    <div class="pattern-bg right-pos"></div>
-                </div>
-                <!-- tab2 end -->
-                <!-- tab3-->
-                <div id="tab-3" class="tab-content">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="box-item vis-det fl-wrap">
-                                <img src="images/services/1.jpg" class="respimg" alt="">
-                                <a data-src="images/services/1.jpg" class="image-popup"><i class="fa fa-search"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <ul class="dec-list">
-                                <li> Flayers / Branding</li>
-                                <li>  Marketing / Develop  </li>
-                                <li>User inerface /  Photography </li>
-                            </ul>
-                            <span class="price">Price: 1190-2250 $</span>
-                        </div>
-                    </div>
-                    <h3><span>03. </span>UI/UX Design</h3>
-                    <div class="serv-text fl-wrap">
-                        <p>Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Curabitur convallis fringilla diam sed aliquam.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <a href="#" class="cus-inner-head-link color-bg">Details + </a>
-                    <div class="serv-dec"></div>
-                    <div class="pattern-bg right-pos"></div>
-                </div>
-                <!-- tab3 end -->
             </div>
         </div>
         <div class="limit-box fl-wrap"></div>
@@ -137,3 +68,6 @@
 </section>
 <!-- section end-->
 {% endfor %}
+<!-- order-wrap-->
+{% include /cta/bar-1.html %}
+<!-- order-wrap end-->
