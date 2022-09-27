@@ -1,0 +1,76 @@
+{% if page.comments == true and jekyll.environment == "production" %}
+<!--section  -->
+<section>
+    <div class="wrap-inner fl-wrap sm-mar-w">
+        <div class="container">
+            <div class="fl-wrap">
+                <div id="comments">
+                    <!--title-->
+                    <h6 id="comments-title">Comments <span>( 3 )</span></h6>
+                    <ul class="commentlist clearafix">
+                        <div id="disqus_thread"></div>
+                        <script>
+                        var disqus_config = function () {
+                            this.page.url = "{{ page.url | absolute_url }}";  
+                            this.page.identifier = "{{ page.url }}";
+                        };
+
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://{{ site.disqus.shorname }}.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                        </script>
+                        <noscript>
+                            Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                        </noscript>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div id="respond" class="clearafix">
+                        <h6 id="reply-title">Leave A Comment</h6>
+                        <div class="comment-reply-form clearfix">
+                            <form action="{{ site.staticman.endpoint }}{{ site.repository }}/{{ site.staticman.branch }}" method="post" id="commentform" class="form-horizontal" name="commentform">
+                                <div class="comment-form-author control-group">
+                                    <div class="controls">
+                                        <input id="author" name="author" type="text" value="" size="40" aria-required="true" />
+                                    </div>
+                                    <label class="control-label" for="author">Name </label>
+                                </div>
+                                <div class="comment-form-email control-group">
+                                    <div class="controls">
+                                        <input id="email" name="email" type="text" value="" size="40" aria-required="true" />
+                                    </div>
+                                    <label class="control-label" for="email">Email </label>
+                                </div>
+                                <div class="comment-form-comment control-group">
+                                    <div class="controls">
+                                        <textarea id="comment" name="comment" cols="50" rows="8" aria-required="true" placeholder="Your comment here..">
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <fieldset class="hidden" style="dispaly: none;">
+                                <!-- used for staticman to generate filenames for each comment -->
+                                    <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+                                    <!-- honeypot used to filter out span -->
+                                    <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
+                                    <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off">
+                                    <!-- end staticman generation -->
+                                </fieldset>
+                                <div class="form-submit">
+                                    <div class="controls">
+                                        <button class="transition button" type="submit">Post Comment</button>
+                                        <input type="hidden" name="comment_post_ID" value="30" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--end respond-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--section end-->
+{% endif %}

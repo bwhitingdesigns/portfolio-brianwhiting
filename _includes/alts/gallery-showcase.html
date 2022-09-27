@@ -1,0 +1,14 @@
+<div class="gallery-items lightgallery spad">
+    {% for gallery in page.images %}
+    <!-- gallery-item-->
+    <div class="gallery-item ">
+        <div class="grid-item-holder">
+            <div class="box-item vis-det fl-wrap">
+                <img src="{{ gallery.image_path }}" alt="{{ gallery.title }}">
+                <a data-src="{{ gallery.image_path }}" class="popgal"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- gallery-item end-->
+    {% endfor %}
+</div>

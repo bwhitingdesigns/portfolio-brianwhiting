@@ -12,7 +12,6 @@ email_alt: bwhitingdesigns@gmail.com
 tel: 334-538-5644
 tel_link: +13345385644
 address: Aurora, CO
-timezone: America/Denver
 
 # Hosting Services
 hosting_url: http://hosting.bwhitingdesigns.com
@@ -29,6 +28,7 @@ googlepodcast_url: https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0v
 dribbble_url: https://dribbble.com/BrianWhiting
 github_url: https://github.com/bwhitingdesigns
 github_username: bwhitingdesigns
+repository: portfolio-brianwhiting
 facebook_url: https://www.facebook.com/bwhitingdesigns
 facebook:
   app_id: 2358622077775061
@@ -40,6 +40,10 @@ twitter:
   username: ForsakenElite08
   card: summary
 
+#disqus
+disqus:
+  shortname: bwhitingdesigns
+
 # Plugins
 plugins:
   - jekyll-feed
@@ -50,24 +54,21 @@ plugins:
 markdown: kramdown
 
 # Permalinks
-permalink: /blog/:categories/:title
+permalink: /:categories/:title
 
 # Collections
 collections:
   portfolio:
-    permalink: "/portfolio/:name"
-    output: true
-  authors:
-    permalink: "/blog/author/:name"
+    permalink: "/:collection/:name"
     output: true
   category:
-    permalink: "/blog/category/:name"
+    permalink: "/:collection/:name"
     output: true
   podcast:
-    permalink: "/idiots-and-a-dm/:name"
+    permalink: "/:collection/:name"
     output: true
   characters:
-    permalink: "/idiots-and-a-dm/cast/:name"
+    permalink: "/:collection/:name"
     output: true
 
 # Pagination Settings

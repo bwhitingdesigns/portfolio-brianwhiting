@@ -1,0 +1,16 @@
+{% if paginator.total_pages > 1 %}
+<!--pagination-->   
+<div class="pagination">
+{% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prevposts-link"><i class="fas fa-caret-left"></i></a>
+{% endif %}
+{% if paginator.page_trail %}
+{% for trail in paginator.page_trail %}
+    <a href="{{ trail.path | prepend: site.baseurl }}" class="blog-page{% if page.url == trail.path %} current-page transition {% endif %}">{{ trail.num }}</a>
+{% endfor %}
+{% endif %}
+{% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="nextposts-link "><i class="fas fa-caret-right"></i></a>
+{% endif %}
+<!--pagination end-->
+{% endif %}

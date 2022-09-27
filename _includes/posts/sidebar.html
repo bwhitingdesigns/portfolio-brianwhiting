@@ -1,0 +1,45 @@
+<div class="col-md-4">
+    <div class="main-sidebar fixed-bar fl-wrap">
+        <div class="widget-sidebar ws_column">
+            <!-- widget -->
+            <div class="widget-inner">
+                <form action="#">
+                    <input name="se" id="se2" type="text" class="search" placeholder="Search..." value="" />
+                    <button class="search-submit" id="submit_btn2"><i class="fa fa-search transition"></i> </button>
+                </form>
+            </div>
+            <!-- widget  -->
+            <h3>Last Posts</h3>
+            <div class="widget-inner">
+                <ul class="widget-posts">
+                {% for post in site.posts limit: 4 %}
+                    <li class="clearfix">
+                        <a href="{{ post.url }}" class="widget-posts-img ajax">
+                            <img src="{{ post.features[0] }}" class="respimg" alt="{{ post.title }}">
+                        </a>
+                        <div class="widget-posts-descr">
+                            <a href="#" title="">{{ post.title }}</a>
+                            <span class="widget-posts-date"><i class="far fa-calendar"></i>{{ post.date | date_to_long_string }}</span>
+                        </div>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <!-- widget -->
+            <h3>Categories</h3>
+            {% assign categories = site.categories | sort %}
+            <div class="widget-inner">
+                <ul class="cat-wid">
+                    {% for category in categories %}
+                    <li class="cat-item">
+                        <a href="/nerding-out/categories/{{ category | first | slugify }}/">
+                            {{ category[0] | replace: '-', ' '  }} {{ category | last | size }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- widget end -->
+        </div>
+    </div>
+</div>

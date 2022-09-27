@@ -3,4 +3,12 @@
   caption: Take a look around the site and tell me what you think and if you have any projects you need my help with
   url: /portfolio/
   url_text: See My Work
+  url_target:
   images: /images/bg/coding.jpg
+- main_caption: Podcast made by idiots about tabletops
+  sub_caption: Idiots and a DM
+  caption: Creating content based on an old mythical game of D&D
+  url: https://anchor.fm/idiots-and-dm
+  url_text: Check Out Podcast
+  url_target: blank
+  images: /images/bg/dndtavern.jpg

@@ -1,0 +1,6 @@
+{
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "files.autoSave": "onFocusChange",
+    "simpleBrowser.focusLockIndicator.enabled": false
+}

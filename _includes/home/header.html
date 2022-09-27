@@ -7,7 +7,7 @@
             <div class="swiper-slide">
                 <div class="fs-slider-item full-height fl-wrap">
                     <div class="bg"  data-bg="{{ slider.images }}" data-swiper-parallax="40%"></div>
-                    <a href="{{ slider.images }}" class="slider-zoom image-popup"><i class="fas fa-search"  ></i></a>
+                    <a href="{{ slider.images }}" class="slider-zoom image-popup"><i class="fas fa-search"></i></a>
                     <div class="overlay"></div>
                     <!-- hero-wrap-->           
                     <div class="hero-wrap">
@@ -17,7 +17,7 @@
                                 <h2>{{ slider.sub_caption }}</h2>
                                 <div class="hero-dec"></div>
                                 <p>{{ slider.caption }}</p>
-                                <a href="{{ slider.url }}" class="btn hide-icon ajax">
+                                <a href="{{ slider.url }}" class="btn hide-icon" {% if slider.url_target == "blank" %} target="_blank" {% endif %} >
                                     <i class="fas fa-caret-right"></i><span>{{ slider.url_text }}</span>
                                 </a>
                             </div>

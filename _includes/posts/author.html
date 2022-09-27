@@ -1,0 +1,31 @@
+{% assign writers = site.authors | where: 'name', page.author | first %}
+{% if page.author %}
+{% for writer in writers %}
+<!--author -->
+<div class="post-author">
+    <div class="post-author-wrap">
+        <div class="post-author-img">
+            <img src="{{ writer.pic }}" alt="">
+        </div>
+        <span>Written By</span>
+        <h3><a rel="author" href="{{ writer.web }}" title="{{ writer.name }}" target="_blank">{{ writer.name }}</a></h3>
+        {{ writer.content | markdownify }}
+        {% if writer.web %}
+        <ul>
+            {% if writer.facebook %}
+            <li><a href="{{ writer.facebook }}" target="_blank" title="{{ writer.name }}'s Facebook"><i class="fab fa-facebook"></i></a></li>
+            {% endif %}
+            {% if writer.twitter %}
+            <li><a href="https://twitter.com/{{ writer.twitter }}" target="_blank" title="{{ writer.name }}'s Twitter"><i class="fab fa-twitter"></i></a></li>
+            {% endif %}
+            {% if writer.instagram %}
+            <li><a href="https://instagram.com/{{ writer.instagram }}" target="_blank" title="{{ writer.name}}'s Instagram"><i class="fab fa-instagram"></i></a></li>
+            {% endif %}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+<!--author end-->
+{% endfor %}
+{% endif %}
+
