@@ -45,6 +45,28 @@
 
     - num: '02'
       icon: far fa-briefcase
+      title: Black Ink Tech
+      year: 2022 - Present
+      heading: Tech Upstart Designer
+      text: I started working with a new tech company named Black Ink Tech helping them out with making websites for their platforms. Not much hard coding due to using Wix as their native CMS of choice, but it is a start. I help make the social media graphics and extra designs that they need help with.
+      list:
+        - New startup
+        - Designer ready to make a new path in my field
+        - Remote work, so no suite and ties
+
+    - num: '03'
+      icon: far fa-briefcase
+      title: Rocky Mountain Flex Fitness
+      year: 2022 - Present
+      heading: Social Media Coordinator
+      text: Spending my time making videos and graphic designs for a local gym. Handle the social media accounts and email marketing for getting more clientelle in and exposure for new ideas that come our way.
+      list:
+        - Fitness plans
+        - Making videos of workouts that be on point
+        - Graphics and video editing weekly
+
+    - num: '04'
+      icon: far fa-briefcase
       title: Digital Media Coordinator
       year: '2022'
       heading: Jack of All Trades
@@ -54,7 +76,7 @@
         - Handled SEO, Social Media, etc.
         - Worked with video editing tasks, graphic edits, etc.
 
-    - num: '03'
+    - num: '05'
       icon: far fa-briefcase
       title: Native Rank
       year: '2019'
@@ -65,7 +87,7 @@
         - Developed a design to dev process
         - Adobe Suit expert and WordPress designer
 
-    - num: '04'
+    - num: '06'
       icon: far fa-briefcase
       title: Madness Labs
       year: 2014 - 2015, 2019, 2020

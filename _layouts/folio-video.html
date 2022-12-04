@@ -1,0 +1,131 @@
+---
+layout: default
+---
+
+<!--Content -->
+<div class="content full-height home-content">
+    <!-- hero-content -->
+    <div class="hero-content fl-wrap full-height">
+        <div class="media-container">
+            <div class="video-mask"></div>
+            <div class="video-holder">
+                <div class="video-container">
+                    <video autoplay  loop muted  class="bgvid">
+                        <source src="{{ page.video }}" type="video/mp4">
+                    </video>
+                </div>
+                <!--  
+                    Vimeo code
+                    
+                     <div  class="background-vimeo" data-vim="97871257"> </div> --> 
+                <!--  
+                    Youtube code 
+                    
+                     <div  class="background-youtube" data-vid="Hg5iNVSp2z8" data-mv="1"> </div> -->
+                <div class="mob-bg bg" data-bg="{{ page.video-still }}"></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!-- hero-wrap-->           
+        <div class="hero-wrap">
+            <div class="container">
+                <div class="hero-item">
+                    <h3>{{ page.tagline }}</h3>
+                    <h2> {{ page.title }}</h2>
+                    <div class="hero-dec"></div>
+                    <p>{{ page.video-description }}</p>
+                    <a href="#sec1" class="btn hide-icon custom-scroll-link"><i class="fas fa-caret-down"></i><span>Details</span></a>
+                </div>
+            </div>
+        </div>
+        <!--hero_promo-wrap-->
+        <div class="hero_promo-wrap bot-element2">
+            <div class="hero_promo-button">
+                <div class="hp_popup" id="html5-videos" data-html="#video3"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="hero_promo-title">
+                <h4>View Video In Hd</h4>
+            </div>
+        </div>
+        <!--hero_promo-wrap end--> 							
+        <!-- Hidden video div -->
+        <div style="display:none;" id="video3">
+            <video class="lg-video-object lg-html5" controls preload="none">
+                <source src="{{ page.video }}" type="video/mp4">
+            </video>
+        </div>
+        <!--hero_promo-wrap end-->							
+        <!-- hero-wrap end-->
+        <div class="hero-dec_top"></div>
+        <div class="hero-dec_bottom"></div>
+    </div>
+    <!-- hero-content end-->
+</div>
+<!-- content  -->
+<div class="content">
+    <!-- column-content -->
+    <div class="column-content">
+        <!-- section-->
+        <section>
+            <!-- wrap-inner -->
+            <div class="wrap-inner fl-wrap sm-mar-w">
+                <div class="container">
+                    <div class="section-title fl-wrap">
+                        <h2>{{ page.title }}</h2>
+                        <h4>Here is the case study from working with the project {{ page.title }}</h4>
+                    </div>
+                    <div class="project-detail-wrap fl-wrap">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="text-title">{{ page.tagline }}</h3>
+                                {{ content }}
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="dec-list">
+                                    <li><span>Category </span> : {{ page.category }}</li>
+                                    <li><span>Date </span> : {{ page.completed }} </li>
+                                    <li><span>Client </span> : {{ page.client }}</li>
+                                    <li><span>Address </span> : {% if page.live_url %}<a href="{{ page.live_url }}" target="_blank">{{ page.live_text }}</a>{% else %}{{ page.live_text }}{% endif %}</li>
+                                </ul>
+                                {% if page.live_url %}<a href="{{ page.live_url }}" class="btn hide-icon mr-top" target="_blank"><i class="fas fa-caret-right"></i><span>View Project</span></a>{% endif %} 
+                            </div>
+                        </div>
+                        
+                        <!-- page nav start-->
+                        <div class="page-nav bl-nav">
+                            {% if page.previous.url %}
+                            {% unless page.next.url %}
+                            <a href="/portfolio/" class="appn ajax"><span>Back to Portfolio</span> <i class="fas fa-plus"></i></a>
+                            {% endunless %}
+                            <a class="ppn" href="{{ page.previous.url }}">
+                                <span class="nav-text">Prev</span>
+                                <div class="tooltip">
+                                    <img src="{{ page.previous.showcase }}" class="respimg" alt="" title="">
+                                    <h5>{{ page.previous.title }}</h5>
+                                </div>
+                            </a>
+                            {% endif %}
+                            {% if page.next.url %}
+                            <a href="/portfolio/" class="appn ajax"><span>Back to Portfolio</span> <i class="fas fa-plus"></i></a>
+                            <a class="npn" href="{{ page.next.url }}">
+                                <span class="nav-text">Next</span>
+                                <div class="tooltip">
+                                    <img src="{{ page.next.showcase }}" class="respimg" alt="" title="">
+                                    <h5>{{ page.next.title }}</h5>
+                                </div>
+                            </a>
+                            {% endif %}
+                        </div>
+                        <!-- page nav end  -->
+                        
+                    </div>
+                </div>
+                <div class="pattern-bg right-pos"></div>
+                <div class="sec-dec"></div>
+            </div>
+            <!-- wrap-inner  end -->
+        </section>
+        <!-- section  end -->                      	 
+    </div>
+    <!-- column content  end -->
+</div>
