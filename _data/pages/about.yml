@@ -35,7 +35,7 @@
     - num: '01'
       icon: far fa-briefcase
       title: Started Freelancing
-      year: 2005 - Present
+      year: July 2005 - Present
       heading: Start of A Hobby turned Career Goal
       text: I started working as a freelancer since middle school when I was getting my feet wet. I only was able to make websites using Notepad in basic HTML and inline CSS. Worked with over 20 different projects during my time on and off as a freelancer. While working, I dabbled in Ruby, custom video game coding languages such as Eclipse and Gen2D (SandScript), and occasional WordPress. Lately has transitioned to JekyllRB for easier and faster development process.
       list:
@@ -46,7 +46,7 @@
     - num: '02'
       icon: far fa-briefcase
       title: Black Ink Tech
-      year: 2022 - Present
+      year: Sept. 2022 - April 2023
       heading: Tech Upstart Designer
       text: I started working with a new tech company named Black Ink Tech helping them out with making websites for their platforms. Not much hard coding due to using Wix as their native CMS of choice, but it is a start. I help make the social media graphics and extra designs that they need help with.
       list:
@@ -57,7 +57,7 @@
     - num: '03'
       icon: far fa-briefcase
       title: Rocky Mountain Flex Fitness
-      year: 2022 - Present
+      year: July 2022 - Dec. 2022
       heading: Social Media Coordinator
       text: Spending my time making videos and graphic designs for a local gym. Handle the social media accounts and email marketing for getting more clientelle in and exposure for new ideas that come our way.
       list:
@@ -68,7 +68,7 @@
     - num: '04'
       icon: far fa-briefcase
       title: Digital Media Coordinator
-      year: '2022'
+      year: Feb. 2022 - May 2022
       heading: Jack of All Trades
       text: Worked on graphic designs for the equipment after photoshoots, took videos of salesman quality controls for clients, uploaded videos to YouTube page, and provided assistance to website media needs. Handled website email marketing campaigns, setup process for organized leads generations, handled weekly email blasts for nationwide clientelle.
       list: 
@@ -79,7 +79,7 @@
     - num: '05'
       icon: far fa-briefcase
       title: Native Rank
-      year: '2019'
+      year: Feb. 2019 - Aug. 2019
       heading: One of the first designers
       text: I was hired on as a web designer for their company and found out to be one of the first two web designers they hired for the position. Started working with them and worked with over 20 projects with them. Specialized on the design team and worked with the post-development team for content updates and changes, along with analytics reports.
       list:
@@ -90,7 +90,7 @@
     - num: '06'
       icon: far fa-briefcase
       title: Madness Labs
-      year: 2014 - 2015, 2019, 2020
+      year: Mar. 2014 - Apr. 2015, June 2020
       heading: My first agency
       text: Started with them as my first agency and their first web designer. Built the company first website as a startup and helped with development projects for the clients and applications made. Got my grasp on Ruby while working with the company that later helped me with expanding my horizon with the new flat cms and static site generators.
       list:
