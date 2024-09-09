@@ -4,22 +4,22 @@ title: Black <span>Ink Tech</span>
 
 client: Black Ink Tech
 
-showcase: /images/clients/thumbs/ati-images/mockup-new.png
+showcase: /images/clients/thumbs/bit-images/homepage-1.jpeg
 
 slides:
-  - image: /images/clients/thumbs/ati-images/mockup-office.jpg
-    heading: Non-profit work for empowering women in New York
-    subheading: Non-proift based in Southeast Queens, NY. They thrive to empower women that have been in domestic violence/abouse situations and use art as a medium to express it.
-  - image: /images/clients/thumbs/ati-images/mockup-old.png
-    heading: The Original Version of the Website
-    subheading: The original design for the Art Transforms Inc. website that I worked on
-  - image: /images/clients/thumbs/ati-images/mockup-new.png
-    heading: The Fresh Look at the Project
-    subheading: The revision for the current website based on the Jekyll platform
+  - image: 
+    heading: 
+    subheading: 
+  - image: 
+    heading: 
+    subheading: 
+  - image: 
+    heading: 
+    subheading: 
 
-logo: /images/thumbs/ati-images/logo-v1.png
+logo: /images/thumbs/bit-images/bit-logo.webp
 
-tagline: Helping a <span>non-profit brand</span> expand
+tagline: Designing <span>bitcoin websites</span> remotely
 
 category: [ web-design ]
 
