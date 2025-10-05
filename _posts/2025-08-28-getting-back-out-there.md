@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: blog
 title: >-
   Been gone for a minute, but I am back!
-featured_image: /images/uploads/serge-kutuzov-meqVd5zwylI-unsplash.jpg
+featured_image: /images/posts/assets/gaming-desk.jg
 
-image_caption: Photo by fotografierende from Pexels
+image_caption: Photo by Alex_Bon from Pixabay
 
 date: 2025-08-28 8:00:00 -0600
 
